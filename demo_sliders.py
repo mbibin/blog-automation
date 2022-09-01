@@ -5,8 +5,8 @@ from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.common.by import By
 
 
-class MouseHover():
-    def mouse_hover(self):
+class Slider():
+    def slider(self):
         driver = webdriver.Chrome(ChromeDriverManager().install())
         driver.get("https://www.snapdeal.com//")
         driver.maximize_window()
@@ -28,5 +28,5 @@ class MouseHover():
         time.sleep(2)
 
 
-run = MouseHover()
-run.mouse_hover()
+run = Slider()
+run.slider()
